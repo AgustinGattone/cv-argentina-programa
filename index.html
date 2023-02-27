@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+    <script src="https://kit.fontawesome.com/0bc438c50e.js" crossorigin="anonymous"></script>
+    <!--Open Graph Data-->
+    <meta property="og:title" content="Curriculum Vitae" />
+    <meta property="og:author" content="Agustin Gattone" />
+</head>
+<body>
+    <div class="navbar">
+    <nav>
+        <ul>
+            <li><a href="#experiencia">Experiencia laboral</a></li>
+            <li><a href="#educacion">Educación</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contactame">Contactame</a></li>
+            <button id="dark-mode-button" >
+                <span>
+                    <i class="fa-solid fa-moon"></i>
+                </span>
+            </button>
+        </ul>
+    </nav>
+    </div>
+    <header>
+        <div class="circle">
+            <img src="https://randomuser.me/api/portraits/women/63.jpg" alt="example_img">
+        </div>
+        <div class="container">
+            <h1>Tara Jordan</h1>
+            <h2>Desarrolladora Web</h2>
+            <ul>
+                <li>Correo electrónico: tara.jordan@example.com</li>
+                <li>Teléfono: (886) 915-0183</li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <section id="experiencia">
+            <h2>Experiencia laboral</h2>
+            <ul>
+                <li>
+                    <h3>Desarrolladora Web</h3>
+                    <p>Graph+</p>
+                    <p>Julio 2014 - Diciembre 2015</p>
+                    <ul>
+                        <li>Creacion y Mantenimiento de Pagina Web</li>
+                        <li>Tareas realizadas con JS, HTML, CSS</li>
+                    </ul>
+                </li>
+            <li>
+                <h3>Desarrolladora FontEnd</h3>
+                <p>MotionWeb</p>
+                <p>Enero 2016 - Actualidad</p>
+                <ul>
+                    <li>Traducir el diseño de un sitio a código HTML y CSS</li>
+                    <li>Estructurar el contenido semánticamente</li>
+                    <li>Controlar tipografías, plantillas, formas del diseño y la interactividad</li>
+                </ul>
+            </li>
+        </ul>
+        </section>
+        <section id="educacion">
+            <h2>Educación</h2>
+            <ul>
+                <li>
+                    <h3>Tecnica en Informatica</h3>
+                    <p>Instituto Tecnologico de Massachusetts</p>
+                    <p>Enero 2008 - Diciembre 2013</p>
+                </li>
+                <li>
+                <h3>Graduada Bachiller</h3>
+                    <p>Escuela Midtown</p>
+                    <p>Enero 2001 - Diciembre 2007</p>
+                </li>
+            </ul>
+        </section>
+        <section  id="habilidades">
+            <h2>Habilidades</h2>
+                <br />
+                <a>HTML</a>
+                <div class="bar-container" >
+                    <div class="bar" style="width: 95%;"></div>
+                    <div class="percent">95%</div>
+                </div>
+                <a>JS</a>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50%;"></div>
+                    <div class="percent">50%</div>
+                </div>
+                <a>CSS</a>
+                <div class="bar-container">
+                    <div class="bar" style="width: 80%;"></div>
+                    <div class="percent">80%</div>
+                </div>
+        </section>
+        <section id="contactame">
+            <h2>Contactame</h2>
+            <form id="form" onsubmit="formSubmit(event)">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="Correo electrónico">
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+            <div id="mensaje-exito" style="display:none;">
+                ¡Formulario enviado correctamente!
+            </div>
+        </section>                 
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

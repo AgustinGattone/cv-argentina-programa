@@ -1,0 +1,206 @@
+body {
+    font-family: 'Roboto Mono', mono;
+    margin: auto;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: auto;
+    font-family: 'Roboto Mono', monospace;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+section {
+    margin: 20px;
+	  width: 80%;
+  	display: inline-block;
+}
+
+section ul {
+    margin-left: 20px
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
+}
+
+nav button {
+  background-color: #333;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+body.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+  
+nav.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+nav button.dark-mode {
+  background-color: #222;
+}
+
+
+
+.bar-container {
+  width: 300px;
+  height: 20px;
+  border: 1px solid #ccc;
+  position: relative;
+}
+  
+.bar {
+  height: 100%;
+  background-color: rgb(0, 153, 255);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+  
+.percent {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 5px;
+  line-height: 20px;
+  font-size: 12px;
+  color: rgb(7, 7, 7);
+}
+
+.circle {
+  border-color: #666 #e2e2e2;
+  border-image: none;
+  border-radius: 50% 50% 50% 50%;
+  border-style: solid;
+  border-width: 10px;
+  height: 128px;
+  width: 128px;
+  overflow: hidden;
+  margin: auto;
+}
+
+
+.container {
+  margin: auto;
+  width: 350px;
+  height: 200px;
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0069d9;
+  }
+
+  .navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+  }
+  
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background-color: #000;
+  }
+
+  .navbar button:hover {
+    background-color: #000;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+
